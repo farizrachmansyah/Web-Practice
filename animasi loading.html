@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            @keyframes loading
+            {
+                from{-webkit-transform: rotate(0deg);}
+                to{-webkit-transform: rotate(360deg);}
+            }
+            #gambar {
+                text-align: center;
+                position: relative;
+                top: 230px;
+            }
+            img {
+                height: 150px;
+                -webkit-animation-name: loading;
+                -webkit-animation-duration: 8s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+            }
+            p {
+                font-family: "Courier New", sans-serif;
+                font-size: 28px;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+            <div id="gambar">
+                <figure>
+                    <img src="settings.png">
+                    <figcaption>
+                        <p>LOADING</p>
+                    </figcaption>
+                </figure>
+            </div>
+    </body>
+</html>

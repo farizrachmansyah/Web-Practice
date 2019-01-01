@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fashop</title>
+        <style>
+            body {
+                font-family: "Century Gothic", sans-serif;
+            }
+            body :not(h1) {
+                font-weight: bold;
+            }
+            h1 {
+                text-align: center;
+                height: 50px;
+            }
+            .hewan {
+                display: inline-block;
+                margin: 20px 33px;
+                width: 375px;
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+            }
+            .info {
+                color: white;
+                position: absolute;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                padding-top: 15%;
+                font-size: 20px;
+            }
+            .info span {
+                display: block;
+            }
+            .hewan img {
+                width: 375px;
+                height: 250px;
+                transition: filter 0.7s;
+            }
+            .hewan:hover img {
+                filter: brightness(30%);
+            }
+            .hewan .info {
+                display: none;
+            }
+            .hewan:hover .info {
+                display: block;
+            }
+            .hewan a {
+                text-decoration: none;
+                color: white;
+                display: block;
+                width: 150px;
+                border: 1px solid white;
+                padding: 5px;
+                margin: 0 auto;
+                transition: color 0.3s, background-color 0.3s;
+            }
+            .hewan a:hover {
+                background-color: white;
+                color: black;
+            }
+
+            /* Beda Animasi */
+
+            .binatang {
+                display: inline-block;
+                margin: 20px 33px;
+                width: 375px;
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+                transition: box-shadow 0.2s;
+            }
+            .binatang:hover {
+                box-shadow: 5px 5px 10px 3px grey;
+            }
+            .bacaan {
+                color: black;
+                position: absolute;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                padding-top: 15%;
+                font-size: 20px;
+            }
+            .bacaan span {
+                display: block;
+            }
+            .binatang img {
+                width: 375px;
+                height: 250px;
+                transition: filter 0.7s;
+            }
+            .binatang:hover img {
+                filter: opacity(50%);
+            }
+            .binatang .bacaan {
+                display: none;
+            }
+            .binatang:hover .bacaan {
+                display: block;
+            }
+            .binatang a {
+                text-decoration: none;
+                color: black;
+                display: block;
+                width: 150px;
+                border: 1px solid black;
+                padding: 5px;
+                margin: 0 auto;
+                transition: color 0.3s, background-color 0.3s;
+            }
+            .binatang a:hover {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JUAL HEWAN KURBAN</h1>
+        <div class="hewan">
+            <img src="sapi.jpg" alt="sapi">
+            <div class="info">
+                <p>SAPI MANTAP <span>Rp 20.000.000,-</span></p>
+                <a href="#">Yakali ga beli</a>
+            </div>
+        </div>
+        <div class="hewan">
+            <img src="kambing.jpg" alt="kambing">
+            <div class="info">
+                <p>KAMBING MANTAP <span>Rp 5.000.000,-</span></p>
+                <a href="#">Yakali ga beli</a>
+            </div>
+        </div>
+        <div class="hewan">
+            <img src="domba.jpg" alt="domba">
+            <div class="info">
+                <p>DOMBA MANTAP <span>Rp 6.000.000,-</span></p>
+                <a href="#">Yakali ga beli</a>
+            </div>
+        </div>
+        <br/>
+        <div class="binatang">
+            <img src="sapi.jpg" alt="sapi">
+            <div class="bacaan">
+                <p>SAPI MANTAP <span>Rp 20.000.000,-</span></p>
+                <a href="#">Yakali ga beli</a>
+            </div>
+        </div>
+        <div class="binatang">
+            <img src="kambing.jpg" alt="kambing">
+            <div class="bacaan">
+                <p>KAMBING MANTAP <span>Rp 5.000.000,-</span></p>
+                <a href="#">Yakali ga beli</a>
+            </div>
+        </div>
+        <div class="binatang">
+            <img src="domba.jpg" alt="domba">
+            <div class="bacaan">
+                <p>DOMBA MANTAP <span>Rp 6.000.000,-</span></p>
+                <a href="#">Yakali ga beli</a>
+            </div>
+        </div>
+    </body>
+</html>

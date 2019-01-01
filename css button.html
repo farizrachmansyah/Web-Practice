@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Button Style</title>
+        <style>
+            * {
+                margin: 0px;
+            }
+            body {
+                background: rgb(80, 168, 80);
+            }
+            .btn {
+                width: 150px;
+                height: 50px;
+                color: white;
+                border: 2.5px solid white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+            }
+            .btn::before {
+                content: "Ready?";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: "Freight Sans Bold", Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                transition: all 0.5s;
+            }
+            .btn:hover::before {
+                top: -50%;
+            }
+            .btn::after {
+                content: "Go!";
+                position: absolute;
+                top: 150%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: "Freight Sans Bold", Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                transition: all 0.5s;
+            }
+            .btn:hover::after {
+                top: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="Mukebook Web/mukebook.html" class="btn"></a>
+    </body>
+</html>

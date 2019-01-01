@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>pseudo classes</title>
+        <style>
+            body :not(h1) {
+                color: red;
+            }
+            p:first-child {
+                color: blue;
+            }
+            p:last-child {
+                font-size: 24px;
+            }
+            ul :nth-child(2) {
+                background: aqua;
+            }
+            ul :nth-child(odd) {
+                text-decoration: line-through;
+            }
+            ul :nth-child(even) {
+                text-decoration: underline;
+            }
+            ul :nth-child(3n+0) {
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo Classes</h1>
+        <div>
+            <span>Span pertama</span>
+            <p>Text kedua</p>
+        </div>
+        <div>
+            <p>Text pertama</p>
+            <p>Text kedua</p>
+            <p>Text ketiga</p>
+        </div>
+        <h1>Nth Child</h1>
+        <Ul>
+            <li>Pertama</li>
+            <li>Kedua</li>
+            <li>Ketiga</li>
+            <li>Keempat</li>
+            <li>Kelima</li>
+            <li>Keenam</li>
+            <li>Ketujuh</li>
+            <li>Kelapan</li>
+            <li>Kesembilan</li>
+        </Ul>
+    </body>
+</html>
